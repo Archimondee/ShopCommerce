@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		745A679064081B9AFDBD1E5B /* Pods_ShopCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A7D192A5A6CC48E1BE3114 /* Pods_ShopCommerce.framework */; };
 		F47959CE2B78C99E00783144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959CD2B78C99E00783144 /* AppDelegate.swift */; };
 		F47959D02B78C99E00783144 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959CF2B78C99E00783144 /* SceneDelegate.swift */; };
 		F47959D22B78C99E00783144 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959D12B78C99E00783144 /* ViewController.swift */; };
-		F47959D52B78C99E00783144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47959D32B78C99E00783144 /* Main.storyboard */; };
 		F47959D72B78C9A100783144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F47959D62B78C9A100783144 /* Assets.xcassets */; };
 		F47959DA2B78C9A100783144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F47959D82B78C9A100783144 /* LaunchScreen.storyboard */; };
+		F47959E32B78C9EE00783144 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959E22B78C9EE00783144 /* AppView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		22A7D192A5A6CC48E1BE3114 /* Pods_ShopCommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6230F53B7289634E24BC64A7 /* Pods-ShopCommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCommerce.debug.xcconfig"; path = "Target Support Files/Pods-ShopCommerce/Pods-ShopCommerce.debug.xcconfig"; sourceTree = "<group>"; };
+		97122229E1D2691CF18DF640 /* Pods-ShopCommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCommerce.release.xcconfig"; path = "Target Support Files/Pods-ShopCommerce/Pods-ShopCommerce.release.xcconfig"; sourceTree = "<group>"; };
 		F47959CA2B78C99E00783144 /* ShopCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopCommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47959CD2B78C99E00783144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47959CF2B78C99E00783144 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F47959D12B78C99E00783144 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F47959D42B78C99E00783144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F47959D62B78C9A100783144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47959D92B78C9A100783144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F47959DB2B78C9A100783144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F47959E22B78C9EE00783144 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745A679064081B9AFDBD1E5B /* Pods_ShopCommerce.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		052B907ADE711926112BCE1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22A7D192A5A6CC48E1BE3114 /* Pods_ShopCommerce.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		907C4A81FA94B1EA47E56751 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6230F53B7289634E24BC64A7 /* Pods-ShopCommerce.debug.xcconfig */,
+				97122229E1D2691CF18DF640 /* Pods-ShopCommerce.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F47959C12B78C99E00783144 = {
 			isa = PBXGroup;
 			children = (
 				F47959CC2B78C99E00783144 /* ShopCommerce */,
 				F47959CB2B78C99E00783144 /* Products */,
+				907C4A81FA94B1EA47E56751 /* Pods */,
+				052B907ADE711926112BCE1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,23 @@
 		F47959CC2B78C99E00783144 /* ShopCommerce */ = {
 			isa = PBXGroup;
 			children = (
+				F47959E12B78C9E400783144 /* View */,
 				F47959CD2B78C99E00783144 /* AppDelegate.swift */,
 				F47959CF2B78C99E00783144 /* SceneDelegate.swift */,
 				F47959D12B78C99E00783144 /* ViewController.swift */,
-				F47959D32B78C99E00783144 /* Main.storyboard */,
 				F47959D62B78C9A100783144 /* Assets.xcassets */,
 				F47959D82B78C9A100783144 /* LaunchScreen.storyboard */,
 				F47959DB2B78C9A100783144 /* Info.plist */,
 			);
 			path = ShopCommerce;
+			sourceTree = "<group>";
+		};
+		F47959E12B78C9E400783144 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F47959E22B78C9EE00783144 /* AppView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F47959DE2B78C9A100783144 /* Build configuration list for PBXNativeTarget "ShopCommerce" */;
 			buildPhases = (
+				BACCB57FC04CB7B23C09FF0C /* [CP] Check Pods Manifest.lock */,
 				F47959C62B78C99E00783144 /* Sources */,
 				F47959C72B78C99E00783144 /* Frameworks */,
 				F47959C82B78C99E00783144 /* Resources */,
+				8797C6D59335BEC8F2A6C47A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,17 +161,59 @@
 			files = (
 				F47959DA2B78C9A100783144 /* LaunchScreen.storyboard in Resources */,
 				F47959D72B78C9A100783144 /* Assets.xcassets in Resources */,
-				F47959D52B78C99E00783144 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8797C6D59335BEC8F2A6C47A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShopCommerce/Pods-ShopCommerce-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShopCommerce/Pods-ShopCommerce-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShopCommerce/Pods-ShopCommerce-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BACCB57FC04CB7B23C09FF0C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShopCommerce-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F47959C62B78C99E00783144 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F47959E32B78C9EE00783144 /* AppView.swift in Sources */,
 				F47959D22B78C99E00783144 /* ViewController.swift in Sources */,
 				F47959CE2B78C99E00783144 /* AppDelegate.swift in Sources */,
 				F47959D02B78C99E00783144 /* SceneDelegate.swift in Sources */,
@@ -147,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F47959D32B78C99E00783144 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F47959D42B78C99E00783144 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F47959D82B78C9A100783144 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -287,6 +355,7 @@
 		};
 		F47959DF2B78C9A100783144 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6230F53B7289634E24BC64A7 /* Pods-ShopCommerce.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,9 +366,10 @@
 				INFOPLIST_FILE = ShopCommerce/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +377,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.course.ShopCommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -315,6 +389,7 @@
 		};
 		F47959E02B78C9A100783144 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97122229E1D2691CF18DF640 /* Pods-ShopCommerce.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,9 +400,10 @@
 				INFOPLIST_FILE = ShopCommerce/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -335,6 +411,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.course.ShopCommerce;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
