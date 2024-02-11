@@ -6,6 +6,6 @@ target 'ShopCommerce' do
   use_frameworks!
 
   # Pods for ShopCommerce
-  pod 'Moya', '~> 15.0'
+  pod 'Moya/Combine', '~> 15.0'
 
 end

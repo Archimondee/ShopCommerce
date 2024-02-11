@@ -80,6 +80,7 @@
 		F47959CC2B78C99E00783144 /* ShopCommerce */ = {
 			isa = PBXGroup;
 			children = (
+				F47959E42B78CD7D00783144 /* MoyaProvider */,
 				F47959E12B78C9E400783144 /* View */,
 				F47959CD2B78C99E00783144 /* AppDelegate.swift */,
 				F47959CF2B78C99E00783144 /* SceneDelegate.swift */,
@@ -97,6 +98,13 @@
 				F47959E22B78C9EE00783144 /* AppView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F47959E42B78CD7D00783144 /* MoyaProvider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MoyaProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
