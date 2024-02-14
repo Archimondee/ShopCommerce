@@ -8,5 +8,5 @@
 import Foundation
 
 enum APIService {
-  case fetchTodos
+  case login(email: String, password: String)
 }

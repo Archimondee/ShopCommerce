@@ -18,6 +18,15 @@
 		F47959E82B78CFD100783144 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959E72B78CFD100783144 /* ApiService.swift */; };
 		F47959EB2B78E16600783144 /* UIKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959EA2B78E16600783144 /* UIKitExtension.swift */; };
 		F47959ED2B78E1BA00783144 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959EC2B78E1BA00783144 /* UIExtension.swift */; };
+		F47959F82B7931C500783144 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959F72B7931C500783144 /* WelcomeView.swift */; };
+		F47959FA2B7938EF00783144 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959F92B7938EF00783144 /* RoundButton.swift */; };
+		F47959FC2B79399300783144 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959FB2B79399300783144 /* SigninView.swift */; };
+		F47959FF2B7942B100783144 /* CountryPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F47959FE2B7942B100783144 /* CountryPicker */; };
+		F4795A012B7942E400783144 /* CountryPickerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4795A002B7942E400783144 /* CountryPickerUI.swift */; };
+		F4795A032B79467F00783144 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4795A022B79467F00783144 /* LoginView.swift */; };
+		F4795A052B794A9300783144 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4795A042B794A9300783144 /* LoginViewModel.swift */; };
+		F4795A072B794B9C00783144 /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4795A062B794B9C00783144 /* LineTextField.swift */; };
+		F4F479532B7BF87200CCCD5E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F479522B7BF87200CCCD5E /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +45,18 @@
 		F47959E72B78CFD100783144 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		F47959EA2B78E16600783144 /* UIKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtension.swift; sourceTree = "<group>"; };
 		F47959EC2B78E1BA00783144 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		F47959EF2B7930E800783144 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		F47959F02B7930E800783144 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		F47959F12B7930E800783144 /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Bold.ttf"; sourceTree = "<group>"; };
+		F47959F22B7930F100783144 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Medium.ttf"; sourceTree = "<group>"; };
+		F47959F72B7931C500783144 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		F47959F92B7938EF00783144 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F47959FB2B79399300783144 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
+		F4795A002B7942E400783144 /* CountryPickerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerUI.swift; sourceTree = "<group>"; };
+		F4795A022B79467F00783144 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F4795A042B794A9300783144 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F4795A062B794B9C00783144 /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
+		F4F479522B7BF87200CCCD5E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +65,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				745A679064081B9AFDBD1E5B /* Pods_ShopCommerce.framework in Frameworks */,
+				F47959FF2B7942B100783144 /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +110,10 @@
 		F47959CC2B78C99E00783144 /* ShopCommerce */ = {
 			isa = PBXGroup;
 			children = (
+				F47959F52B79319800783144 /* UICommon */,
+				F47959F42B79318000783144 /* ViewModel */,
+				F47959F32B79317900783144 /* Model */,
+				F47959EE2B7930DD00783144 /* Font */,
 				F47959E92B78E14A00783144 /* Util */,
 				F47959E42B78CD7D00783144 /* Moya */,
 				F47959E12B78C9E400783144 /* View */,
@@ -104,6 +130,7 @@
 		F47959E12B78C9E400783144 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F47959F62B7931B600783144 /* Login */,
 				F47959E22B78C9EE00783144 /* AppView.swift */,
 			);
 			path = View;
@@ -127,6 +154,53 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		F47959EE2B7930DD00783144 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F47959F12B7930E800783144 /* Gilroy-Bold.ttf */,
+				F47959F02B7930E800783144 /* Gilroy-Regular.ttf */,
+				F47959EF2B7930E800783144 /* Gilroy-SemiBold.ttf */,
+				F47959F22B7930F100783144 /* Gilroy-Medium.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F47959F32B79317900783144 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4F479522B7BF87200CCCD5E /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F47959F42B79318000783144 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4795A042B794A9300783144 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F47959F52B79319800783144 /* UICommon */ = {
+			isa = PBXGroup;
+			children = (
+				F47959F92B7938EF00783144 /* RoundButton.swift */,
+				F4795A002B7942E400783144 /* CountryPickerUI.swift */,
+				F4795A062B794B9C00783144 /* LineTextField.swift */,
+			);
+			path = UICommon;
+			sourceTree = "<group>";
+		};
+		F47959F62B7931B600783144 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F47959F72B7931C500783144 /* WelcomeView.swift */,
+				F47959FB2B79399300783144 /* SigninView.swift */,
+				F4795A022B79467F00783144 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +219,9 @@
 			dependencies = (
 			);
 			name = ShopCommerce;
+			packageProductDependencies = (
+				F47959FE2B7942B100783144 /* CountryPicker */,
+			);
 			productName = ShopCommerce;
 			productReference = F47959CA2B78C99E00783144 /* ShopCommerce.app */;
 			productType = "com.apple.product-type.application";
@@ -173,6 +250,9 @@
 				Base,
 			);
 			mainGroup = F47959C12B78C99E00783144;
+			packageReferences = (
+				F47959FD2B7942B100783144 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+			);
 			productRefGroup = F47959CB2B78C99E00783144 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,12 +321,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4795A012B7942E400783144 /* CountryPickerUI.swift in Sources */,
 				F47959E32B78C9EE00783144 /* AppView.swift in Sources */,
 				F47959E62B78CF8200783144 /* ApiServiceEnum.swift in Sources */,
+				F47959FC2B79399300783144 /* SigninView.swift in Sources */,
+				F4795A072B794B9C00783144 /* LineTextField.swift in Sources */,
 				F47959E82B78CFD100783144 /* ApiService.swift in Sources */,
 				F47959D22B78C99E00783144 /* ViewController.swift in Sources */,
+				F4795A052B794A9300783144 /* LoginViewModel.swift in Sources */,
+				F47959F82B7931C500783144 /* WelcomeView.swift in Sources */,
 				F47959EB2B78E16600783144 /* UIKitExtension.swift in Sources */,
+				F4F479532B7BF87200CCCD5E /* UserModel.swift in Sources */,
+				F47959FA2B7938EF00783144 /* RoundButton.swift in Sources */,
 				F47959CE2B78C99E00783144 /* AppDelegate.swift in Sources */,
+				F4795A032B79467F00783144 /* LoginView.swift in Sources */,
 				F47959D02B78C99E00783144 /* SceneDelegate.swift in Sources */,
 				F47959ED2B78E1BA00783144 /* UIExtension.swift in Sources */,
 			);
@@ -303,7 +391,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -318,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -366,7 +454,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -375,7 +463,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -393,14 +481,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UM5JNC6JYW;
+				DEVELOPMENT_TEAM = VNCNWRYXF7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShopCommerce/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -427,14 +515,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UM5JNC6JYW;
+				DEVELOPMENT_TEAM = VNCNWRYXF7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ShopCommerce/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -475,6 +563,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F47959FD2B7942B100783144 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mobven/CountryPicker.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F47959FE2B7942B100783144 /* CountryPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F47959FD2B7942B100783144 /* XCRemoteSwiftPackageReference "CountryPicker" */;
+			productName = CountryPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F47959C22B78C99E00783144 /* Project object */;
 }

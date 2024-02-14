@@ -8,27 +8,38 @@
 import Foundation
 import Moya
 
+let provider = MoyaProvider<APIService>(plugins: [NetworkLoggerPlugin(configuration: .init(logOptions: .verbose))])
+
 extension APIService: TargetType {
   var baseURL: URL {
-    URL(string: "https://reqres.in")!
+    URL(string: "http://127.0.0.1:3001/api")!
   }
 
   var path: String {
     switch self {
-    case .fetchTodos:
-      return "/todos"
+    case .login:
+      return "/app/login"
     }
   }
 
   var method: Moya.Method {
-    .get
+    switch self {
+    case .login:
+      return .post
+    }
   }
 
   var task: Task {
-    .requestPlain
+    switch self {
+    case let .login(email, password):
+      return .requestParameters(parameters: ["email": email, "password": password, "dervice_token": ""], encoding: JSONEncoding.default)
+    }
   }
 
   var headers: [String: String]? {
-    ["Content-Type": "application/json"]
+    switch self {
+    case .login:
+      return ["Content-Type": "application/json"]
+    }
   }
 }
