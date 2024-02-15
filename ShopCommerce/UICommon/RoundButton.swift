@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RoundButton: View {
   @State var title: String = "Title"
+  @State var btnColor: Color = Color.primaryApp
   var didTap: (() -> Void)?
 
   var body: some View {
@@ -23,7 +24,7 @@ struct RoundButton: View {
     }
     
     //.frame(minWidth: 0, maxWidth: .infinity, minHeight: 60, maxHeight: 60)
-    .background(Color.primaryApp)
+    .background(btnColor)
     .cornerRadius(20)
   }
 }

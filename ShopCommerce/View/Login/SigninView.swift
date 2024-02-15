@@ -13,6 +13,8 @@ struct SigninView: View {
   @State var isShowPicker: Bool = false
   @State var countryObj: Country?
 
+  @EnvironmentObject private var appVM: AppViewModel
+
   var body: some View {
     ZStack {
       Image("bottom_bg")
@@ -52,6 +54,14 @@ struct SigninView: View {
             TextField("Enter mobile phone", text: $txtMobile)
               .frame(minWidth: 0, maxWidth: .infinity)
           }
+
+          RoundButton(title: "Continue with Email Sign In", btnColor: Color(hex: "5383EC")) {
+            appVM.navigateTo(.login)
+          }.padding(.top, 20).padding(.bottom, .screenWidth * 0.02)
+          RoundButton(title: "Continue with Email Sign Up") {
+            appVM.navigateTo(.signup)
+          }.padding(.bottom, .screenWidth * 0.05)
+
           Divider()
             .padding(.bottom, 25)
 
@@ -94,7 +104,7 @@ struct SigninView: View {
         }
         .padding(.horizontal, 20)
         .frame(width: .screenWidth, alignment: .leading)
-        .padding(.top, .topInsets + .screenWidth)
+        .padding(.top, .topInsets + .screenWidth * 0.55)
       }
     }
     .onAppear {
@@ -104,9 +114,10 @@ struct SigninView: View {
       CountryPickerUI(country: $countryObj)
     })
     .navigationTitle("")
-    .navigationBarBackButtonHidden()
+    //.navigationBarBackButtonHidden()
     .toolbar(.hidden)
     .ignoresSafeArea()
+    
   }
 }
 

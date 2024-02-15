@@ -9,4 +9,5 @@ import Foundation
 
 enum APIService {
   case login(email: String, password: String)
+  case register(username: String, email: String, password: String)
 }

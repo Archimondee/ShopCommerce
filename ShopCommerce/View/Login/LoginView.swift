@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
   @Environment(\.presentationMode) var mode: Binding<PresentationMode>
   @StateObject var loginVM = LoginViewModel.shared
+  @EnvironmentObject var appVM: AppViewModel
 
   var body: some View {
     ZStack {
@@ -69,7 +70,19 @@ struct LoginView: View {
         .padding(.bottom, .screenWidth * 0.05)
 
         RoundButton(title: "Log In") {
-          loginVM.login { _ in
+          loginVM.login { completion in
+            DispatchQueue.main.async {
+              switch completion {
+              case .success:
+                loginVM.showAlert = true
+                loginVM.showMessage = "Login Success"
+                loginVM.showAlertTitle = "Success"
+              case let .failure(error):
+                loginVM.showMessage = error.localizedDescription
+                loginVM.showAlert = true
+                loginVM.showAlertTitle = "Error"
+              }
+            }
           }
 
         }.padding(.bottom, .screenWidth * 0.05)
@@ -81,6 +94,9 @@ struct LoginView: View {
           Text("Signup")
             .font(.customfont(.medium, fontSize: 14))
             .foregroundColor(.primaryApp)
+            .onTapGesture {
+              appVM.replaceNavigation(.signup)
+            }
         }
         Spacer()
       }
@@ -88,8 +104,8 @@ struct LoginView: View {
       .padding(.horizontal, 20)
       .padding(.bottom, .bottomInsets)
     }
-    .alert(isPresented: $loginVM.isError) {
-      Alert(title: Text("Error"), message: Text(loginVM.errorMessage), dismissButton: .default(Text("Ok")))
+    .alert(isPresented: $loginVM.showAlert) {
+      Alert(title: Text(loginVM.showAlertTitle), message: Text(loginVM.showMessage), dismissButton: .default(Text("Ok")))
     }
     // .background(Color.white)
     .navigationTitle("")
