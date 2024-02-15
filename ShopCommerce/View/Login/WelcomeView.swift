@@ -37,7 +37,7 @@ struct WelcomeView: View {
           .padding(.bottom, 30)
 
         RoundButton(title: "Get Started") {
-          appVM.navigateTo(.login)
+          appVM.navigateTo(.signin)
         }
 
         Spacer()

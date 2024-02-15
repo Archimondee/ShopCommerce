@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		745A679064081B9AFDBD1E5B /* Pods_ShopCommerce.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A7D192A5A6CC48E1BE3114 /* Pods_ShopCommerce.framework */; };
+		F443578A2B7DC8E000E1A799 /* NavigationTransitions in Frameworks */ = {isa = PBXBuildFile; productRef = F44357892B7DC8E000E1A799 /* NavigationTransitions */; };
+		F445D7A12B7CE7FA00CC4437 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445D7A02B7CE7FA00CC4437 /* SignUpView.swift */; };
+		F445D7A32B7CE9F000CC4437 /* NavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445D7A22B7CE9F000CC4437 /* NavigationViewModel.swift */; };
+		F445D7A62B7D329300CC4437 /* NavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445D7A52B7D329300CC4437 /* NavigationControllerExtension.swift */; };
 		F47959CE2B78C99E00783144 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959CD2B78C99E00783144 /* AppDelegate.swift */; };
 		F47959D02B78C99E00783144 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959CF2B78C99E00783144 /* SceneDelegate.swift */; };
 		F47959D22B78C99E00783144 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47959D12B78C99E00783144 /* ViewController.swift */; };
@@ -33,6 +37,9 @@
 		22A7D192A5A6CC48E1BE3114 /* Pods_ShopCommerce.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopCommerce.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6230F53B7289634E24BC64A7 /* Pods-ShopCommerce.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCommerce.debug.xcconfig"; path = "Target Support Files/Pods-ShopCommerce/Pods-ShopCommerce.debug.xcconfig"; sourceTree = "<group>"; };
 		97122229E1D2691CF18DF640 /* Pods-ShopCommerce.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopCommerce.release.xcconfig"; path = "Target Support Files/Pods-ShopCommerce/Pods-ShopCommerce.release.xcconfig"; sourceTree = "<group>"; };
+		F445D7A02B7CE7FA00CC4437 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		F445D7A22B7CE9F000CC4437 /* NavigationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewModel.swift; sourceTree = "<group>"; };
+		F445D7A52B7D329300CC4437 /* NavigationControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerExtension.swift; sourceTree = "<group>"; };
 		F47959CA2B78C99E00783144 /* ShopCommerce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShopCommerce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F47959CD2B78C99E00783144 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F47959CF2B78C99E00783144 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				745A679064081B9AFDBD1E5B /* Pods_ShopCommerce.framework in Frameworks */,
+				F443578A2B7DC8E000E1A799 /* NavigationTransitions in Frameworks */,
 				F47959FF2B7942B100783144 /* CountryPicker in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +97,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F445D7A42B7D327F00CC4437 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F445D7A52B7D329300CC4437 /* NavigationControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		F47959C12B78C99E00783144 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +126,7 @@
 		F47959CC2B78C99E00783144 /* ShopCommerce */ = {
 			isa = PBXGroup;
 			children = (
+				F445D7A42B7D327F00CC4437 /* Extension */,
 				F47959F52B79319800783144 /* UICommon */,
 				F47959F42B79318000783144 /* ViewModel */,
 				F47959F32B79317900783144 /* Model */,
@@ -177,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				F4795A042B794A9300783144 /* LoginViewModel.swift */,
+				F445D7A22B7CE9F000CC4437 /* NavigationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -197,6 +215,7 @@
 				F47959F72B7931C500783144 /* WelcomeView.swift */,
 				F47959FB2B79399300783144 /* SigninView.swift */,
 				F4795A022B79467F00783144 /* LoginView.swift */,
+				F445D7A02B7CE7FA00CC4437 /* SignUpView.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -221,6 +240,7 @@
 			name = ShopCommerce;
 			packageProductDependencies = (
 				F47959FE2B7942B100783144 /* CountryPicker */,
+				F44357892B7DC8E000E1A799 /* NavigationTransitions */,
 			);
 			productName = ShopCommerce;
 			productReference = F47959CA2B78C99E00783144 /* ShopCommerce.app */;
@@ -252,6 +272,7 @@
 			mainGroup = F47959C12B78C99E00783144;
 			packageReferences = (
 				F47959FD2B7942B100783144 /* XCRemoteSwiftPackageReference "CountryPicker" */,
+				F44357882B7DC8E000E1A799 /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */,
 			);
 			productRefGroup = F47959CB2B78C99E00783144 /* Products */;
 			projectDirPath = "";
@@ -321,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F445D7A32B7CE9F000CC4437 /* NavigationViewModel.swift in Sources */,
 				F4795A012B7942E400783144 /* CountryPickerUI.swift in Sources */,
 				F47959E32B78C9EE00783144 /* AppView.swift in Sources */,
 				F47959E62B78CF8200783144 /* ApiServiceEnum.swift in Sources */,
@@ -332,7 +354,9 @@
 				F47959F82B7931C500783144 /* WelcomeView.swift in Sources */,
 				F47959EB2B78E16600783144 /* UIKitExtension.swift in Sources */,
 				F4F479532B7BF87200CCCD5E /* UserModel.swift in Sources */,
+				F445D7A62B7D329300CC4437 /* NavigationControllerExtension.swift in Sources */,
 				F47959FA2B7938EF00783144 /* RoundButton.swift in Sources */,
+				F445D7A12B7CE7FA00CC4437 /* SignUpView.swift in Sources */,
 				F47959CE2B78C99E00783144 /* AppDelegate.swift in Sources */,
 				F4795A032B79467F00783144 /* LoginView.swift in Sources */,
 				F47959D02B78C99E00783144 /* SceneDelegate.swift in Sources */,
@@ -565,6 +589,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F44357882B7DC8E000E1A799 /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/davdroman/swiftui-navigation-transitions";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.13.3;
+			};
+		};
 		F47959FD2B7942B100783144 /* XCRemoteSwiftPackageReference "CountryPicker" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mobven/CountryPicker.git";
@@ -576,6 +608,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F44357892B7DC8E000E1A799 /* NavigationTransitions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F44357882B7DC8E000E1A799 /* XCRemoteSwiftPackageReference "swiftui-navigation-transitions" */;
+			productName = NavigationTransitions;
+		};
 		F47959FE2B7942B100783144 /* CountryPicker */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F47959FD2B7942B100783144 /* XCRemoteSwiftPackageReference "CountryPicker" */;

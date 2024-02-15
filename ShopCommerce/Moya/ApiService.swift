@@ -19,12 +19,14 @@ extension APIService: TargetType {
     switch self {
     case .login:
       return "/app/login"
+    case .register:
+      return "/app/sign_up"
     }
   }
 
   var method: Moya.Method {
     switch self {
-    case .login:
+    case .login, .register:
       return .post
     }
   }
@@ -33,12 +35,15 @@ extension APIService: TargetType {
     switch self {
     case let .login(email, password):
       return .requestParameters(parameters: ["email": email, "password": password, "dervice_token": ""], encoding: JSONEncoding.default)
+
+    case let .register(username, email, password):
+      return .requestParameters(parameters: ["username": username, "email": email, "password": password, "dervice_token": ""], encoding: JSONEncoding.default)
     }
   }
 
   var headers: [String: String]? {
     switch self {
-    case .login:
+    case .login, .register:
       return ["Content-Type": "application/json"]
     }
   }
