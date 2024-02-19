@@ -74,9 +74,13 @@ struct LoginView: View {
             DispatchQueue.main.async {
               switch completion {
               case .success:
+                appVM.resetAndCreateNewDestination(.mainTabView)
                 loginVM.showAlert = true
                 loginVM.showMessage = "Login Success"
                 loginVM.showAlertTitle = "Success"
+                loginVM.txtEmail = ""
+                loginVM.txtPassword = ""
+
               case let .failure(error):
                 loginVM.showMessage = error.localizedDescription
                 loginVM.showAlert = true
@@ -95,7 +99,9 @@ struct LoginView: View {
             .font(.customfont(.medium, fontSize: 14))
             .foregroundColor(.primaryApp)
             .onTapGesture {
-              appVM.replaceNavigation(.signup)
+              DispatchQueue.main.async {
+                appVM.replaceNavigation(.signup)
+              }
             }
         }
         Spacer()
@@ -109,9 +115,9 @@ struct LoginView: View {
     }
     // .background(Color.white)
     .navigationTitle("")
-    .navigationBarBackButtonHidden()
     .toolbar(.hidden)
     .ignoresSafeArea()
+    .navigationBarBackButtonHidden()
   }
 }
 

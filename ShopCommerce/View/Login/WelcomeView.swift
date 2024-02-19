@@ -50,6 +50,7 @@ struct WelcomeView: View {
     .navigationBarBackButtonHidden()
     .toolbar(.hidden)
     .ignoresSafeArea(.all)
+    .interactiveDismissDisabled()
   }
 }
 

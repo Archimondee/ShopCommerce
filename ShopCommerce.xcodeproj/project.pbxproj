@@ -30,6 +30,8 @@
 		F4795A032B79467F00783144 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4795A022B79467F00783144 /* LoginView.swift */; };
 		F4795A052B794A9300783144 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4795A042B794A9300783144 /* LoginViewModel.swift */; };
 		F4795A072B794B9C00783144 /* LineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4795A062B794B9C00783144 /* LineTextField.swift */; };
+		F4D76F6F2B7E98C900FD6737 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D76F6E2B7E98C900FD6737 /* Utils.swift */; };
+		F4D76F722B7E9B6200FD6737 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D76F712B7E9B6200FD6737 /* MainTabView.swift */; };
 		F4F479532B7BF87200CCCD5E /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F479522B7BF87200CCCD5E /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,8 @@
 		F4795A022B79467F00783144 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F4795A042B794A9300783144 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F4795A062B794B9C00783144 /* LineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineTextField.swift; sourceTree = "<group>"; };
+		F4D76F6E2B7E98C900FD6737 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F4D76F712B7E9B6200FD6737 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F4F479522B7BF87200CCCD5E /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +151,7 @@
 		F47959E12B78C9E400783144 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F4D76F702B7E9B5100FD6737 /* MainTabView */,
 				F47959F62B7931B600783144 /* Login */,
 				F47959E22B78C9EE00783144 /* AppView.swift */,
 			);
@@ -167,6 +172,7 @@
 			children = (
 				F47959EA2B78E16600783144 /* UIKitExtension.swift */,
 				F47959EC2B78E1BA00783144 /* UIExtension.swift */,
+				F4D76F6E2B7E98C900FD6737 /* Utils.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -218,6 +224,14 @@
 				F445D7A02B7CE7FA00CC4437 /* SignUpView.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		F4D76F702B7E9B5100FD6737 /* MainTabView */ = {
+			isa = PBXGroup;
+			children = (
+				F4D76F712B7E9B6200FD6737 /* MainTabView.swift */,
+			);
+			path = MainTabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -353,10 +367,12 @@
 				F4795A052B794A9300783144 /* LoginViewModel.swift in Sources */,
 				F47959F82B7931C500783144 /* WelcomeView.swift in Sources */,
 				F47959EB2B78E16600783144 /* UIKitExtension.swift in Sources */,
+				F4D76F722B7E9B6200FD6737 /* MainTabView.swift in Sources */,
 				F4F479532B7BF87200CCCD5E /* UserModel.swift in Sources */,
 				F445D7A62B7D329300CC4437 /* NavigationControllerExtension.swift in Sources */,
 				F47959FA2B7938EF00783144 /* RoundButton.swift in Sources */,
 				F445D7A12B7CE7FA00CC4437 /* SignUpView.swift in Sources */,
+				F4D76F6F2B7E98C900FD6737 /* Utils.swift in Sources */,
 				F47959CE2B78C99E00783144 /* AppDelegate.swift in Sources */,
 				F4795A032B79467F00783144 /* LoginView.swift in Sources */,
 				F47959D02B78C99E00783144 /* SceneDelegate.swift in Sources */,

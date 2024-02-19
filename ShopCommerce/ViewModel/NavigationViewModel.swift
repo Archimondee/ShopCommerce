@@ -12,6 +12,9 @@ enum NavigationOptions: Hashable {
   case login
   case signup
   case signin
+  case welcomeView
+
+  case mainTabView
 }
 
 class AppViewModel: ObservableObject {
@@ -31,8 +34,12 @@ class AppViewModel: ObservableObject {
   }
 
   func replaceNavigation(_ destination: NavigationOptions) {
-    var newArray = navigationPath
-    newArray[navigationPath.count - 1] = destination
-    navigationPath = newArray
+    popToPrevious()
+    navigationPath.append(destination)
+  }
+
+  func resetAndCreateNewDestination(_ destination: NavigationOptions) {
+    resetNavigation()
+    navigationPath.append(destination)
   }
 }

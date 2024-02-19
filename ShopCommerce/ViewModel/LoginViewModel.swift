@@ -69,7 +69,10 @@ class LoginViewModel: ObservableObject {
             return
           }
 
+          Utils.setUserDefault(data: payload, key: "user")
+
           self.user = try JSONDecoder().decode(UserModel.self, from: JSONSerialization.data(withJSONObject: payload))
+
           completion(.success(self.user))
 
         } catch {
@@ -128,7 +131,10 @@ class LoginViewModel: ObservableObject {
             return
           }
 
+          Utils.setUserDefault(data: payload, key: "user")
+
           self.user = try JSONDecoder().decode(UserModel.self, from: JSONSerialization.data(withJSONObject: payload))
+
           completion(.success(self.user))
 
         } catch {

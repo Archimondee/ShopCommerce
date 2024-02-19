@@ -114,7 +114,7 @@ struct SigninView: View {
       CountryPickerUI(country: $countryObj)
     })
     .navigationTitle("")
-    //.navigationBarBackButtonHidden()
+    .navigationBarBackButtonHidden()
     .toolbar(.hidden)
     .ignoresSafeArea()
     

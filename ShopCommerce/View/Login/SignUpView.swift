@@ -83,6 +83,8 @@ struct SignUpView: View {
                   loginVM.showAlert = true
                   loginVM.showMessage = "Register Success"
                   loginVM.showAlertTitle = "Success"
+
+                  appVM.resetAndCreateNewDestination(.mainTabView)
                 case let .failure(error):
                   loginVM.showMessage = error.localizedDescription
                   loginVM.showAlert = true
@@ -102,7 +104,9 @@ struct SignUpView: View {
               .font(.customfont(.semibold, fontSize: 14))
               .foregroundColor(.primaryApp)
               .onTapGesture {
-                appVM.replaceNavigation(.login)
+                DispatchQueue.main.async {
+                  appVM.replaceNavigation(.login)
+                }
               }
           }
 
@@ -136,9 +140,9 @@ struct SignUpView: View {
       Alert(title: Text(loginVM.showAlertTitle), message: Text(loginVM.showMessage), dismissButton: .default(Text("Ok")))
     })
     .navigationTitle("")
-    .navigationBarHidden(true)
-    .navigationBarBackButtonHidden(true)
+    .toolbar(.hidden)
     .ignoresSafeArea()
+    .navigationBarBackButtonHidden()
   }
 }
 

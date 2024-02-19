@@ -8,11 +8,37 @@
 import SwiftUI
 
 struct MainTabView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+  @EnvironmentObject private var appVM: AppViewModel
+  var body: some View {
+    ZStack {
+      VStack {
+        Text("hello")
+        Spacer()
+      }
     }
+    .navigationTitle("")
+    .toolbar(.hidden)
+    .ignoresSafeArea()
+    .navigationBarBackButtonHidden()
+    .interactiveDismissDisabled()
+    .onAppear {
+      print("hello i am here \(Utils.getUserDefaultObject(key: "user") as? Data)")
+      guard let user = Utils.getUserDefaultObject(key: "user") as? Data else {
+        print("user empty")
+        return
+      }
+
+      do {
+        let decodedUser = try JSONDecoder().decode(UserModel.self, from: user)
+        print("user \(decodedUser.authToken)")
+
+      } catch {
+        print("Error \(error.localizedDescription)")
+      }
+    }
+  }
 }
 
 #Preview {
-    MainTabView()
+  MainTabView()
 }
